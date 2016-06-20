@@ -5,7 +5,7 @@
 	<artifactId>hanglian</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>泰兴航联</name>
+	<name>taixinghanglian</name>
 	<!-- 集中定义依赖版本号 -->
 	<properties>
 		<junit.version>4.10</junit.version>
@@ -56,6 +56,12 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+        <!--jms与spring整合-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jms</artifactId>
+            <version>3.2.1.RELEASE</version>
+        </dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -182,6 +188,12 @@
 			<groupId>com.github.abel533</groupId>
 			<artifactId>ECharts</artifactId>
 			<version>3.0.0</version>
+		</dependency>
+		<!--activeMq-->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>5.7.0</version>
 		</dependency>
 	</dependencies>
 
