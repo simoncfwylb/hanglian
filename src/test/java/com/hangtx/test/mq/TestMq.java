@@ -23,12 +23,23 @@ public class TestMq {
 
     @Autowired
     @Qualifier("queueDestination")
+
     private Destination queueDestination;
+
+
+    @Autowired
+    @Qualifier("sessionQueuequeueDestination")
+    private Destination sessionQueuequeueDestination;
 
     @Test
     public void testMq(){
-        producerService.sendMsg(queueDestination,"hhhhhhhhhhhhhhh");
+        producerService.sendMsg(queueDestination,"hhhhhh=========================hhhhhhhhh");
     }
 
+
+    @Test
+    public void testMqSessionAware(){
+        producerService.sendMsg(sessionQueuequeueDestination,"发送消息返回型的消息======");
+    }
 
 }
